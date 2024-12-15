@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Todo</title>
+</head>
+<body>
+    <div class="todo-container">
+        <h2 class="todo-title">To do list</h2>
+        <div class="todo-wrapper">
+            <form class="todo-form">
+                <input type="text" id="textInput" placeholder="Add item" class="todo-input">
+                <input type="button" id="buttonInput" value="Add" class="add-button">
+            </form>
+            <div class="todo-filter">
+                <button class="filter-option active" data-target="All">All</button>
+                <button class="filter-option" data-target="Active">Active</button>
+                <button class="filter-option" data-target="Complete">Complete</button>
+            </div>
+            <div>
+                <ul class="todo-list" id="list"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
